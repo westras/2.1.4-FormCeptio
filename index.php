@@ -20,7 +20,7 @@
     ?>
 
     <h2>GET-formulär</h2>
-    <form method="GET">
+    <form method="GET"> 
         <label for="get_name">Namn:</label>
         <input type="text" id="get_name" name="name" value="<?php echo htmlspecialchars($getData['name'] ?? ''); ?>">
         
@@ -30,8 +30,8 @@
         <button type="submit">Skicka GET</button>
     </form>
 
-    /*/ Exact samma som get men post moethod istället /*/
-    <h2>POST-formulär</h2>
+
+    <h2>POST-formulär</h2> 
     <form method="POST">
         <label for="post_name">Namn:</label>
         <input type="text" id="post_name" name="name" value="<?php echo htmlspecialchars($postData['name'] ?? ''); ?>">
