@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulär med GET och POST</h1>
+    <h1>Formulär med get å post</h1>
     
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,7 +16,7 @@
     }
     ?>
 
-    <h2>POST formulär</h2> 
+    <h2>post formulär</h2> 
     <form method="POST">
         <label for="post_name">Namn:</label>
         <input type="text" id="post_name" name="name" value="<?php echo htmlspecialchars($postData['name'] ?? ''); ?>">
@@ -28,7 +28,7 @@
     </form>
 
     <?php if (!empty($postData)): ?>
-        <h2>(data från post)</h2>
+        <h2>get (data från post)</h2>
         <form method="GET"> 
             <label for="get_name">Namn:</label>
             <input type="text" id="get_name" name="name" value="<?php echo htmlspecialchars($postData['name'] ?? ''); ?>" readonly>
