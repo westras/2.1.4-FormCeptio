@@ -19,7 +19,7 @@
     $getData = $_GET;
     ?>
 
-    <h2>GET-formulär</h2>
+    <h2>GET formulär</h2>
     <form method="GET"> 
         <label for="get_name">Namn:</label>
         <input type="text" id="get_name" name="name" value="<?php echo htmlspecialchars($getData['name'] ?? ''); ?>">
@@ -27,11 +27,11 @@
         <label for="get_email">E-mail:</label>
         <input type="email" id="get_email" name="email" value="<?php echo htmlspecialchars($getData['email'] ?? ''); ?>">
         
-        <button type="submit">Skicka GET</button>
+        <button type="submit">Skicka get</button>
     </form>
 
 
-    <h2>POST-formulär</h2> 
+    <h2>POST formulär</h2> 
     <form method="POST">
         <label for="post_name">Namn:</label>
         <input type="text" id="post_name" name="name" value="<?php echo htmlspecialchars($postData['name'] ?? ''); ?>">
@@ -39,11 +39,11 @@
         <label for="post_email">E-mail:</label>
         <input type="email" id="post_email" name="email" value="<?php echo htmlspecialchars($postData['email'] ?? ''); ?>">
         
-        <button type="submit">Skicka POST</button>
+        <button type="submit">Skicka post</button>
     </form>
 
     <?php if (!empty($postData)): ?>
-        <h2>Data från POST-formulär</h2>
+        <h2>Data ifrån post formuläret</h2>
         <ul>
             <?php foreach ($postData as $key => $value): ?>
                 <li><strong><?php echo htmlspecialchars($key); ?>:</strong> <?php echo htmlspecialchars($value); ?></li>
@@ -52,7 +52,7 @@
     <?php endif; ?>
 
     <?php if (!empty($getData)): ?>
-        <h2>Data från GET-formulär</h2>
+        <h2>Data ifrån get formuläret</h2>
         <ul>
             <?php foreach ($getData as $key => $value): ?>
                 <li><strong><?php echo htmlspecialchars($key); ?>:</strong> <?php echo htmlspecialchars($value); ?></li>
