@@ -28,7 +28,7 @@
     </form>
 
     <?php if (!empty($postData)): ?>
-        <h2>GET formulär (med skickad data)</h2>
+        <h2>(data från post)</h2>
         <form method="GET"> 
             <label for="get_name">Namn:</label>
             <input type="text" id="get_name" name="name" value="<?php echo htmlspecialchars($postData['name'] ?? ''); ?>" readonly>
